@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Introduction</title>
+
+		<!-- External Styling -->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<!-- Internal Styling -->
+		<style>
+			h1 {
+				color: blue !important;
+			}
+		</style>
+		
+	</head>
+	<body>
+
+		<nav id="top">
+			<a href="#landing">Zuitt</a>
+
+			<div>
+				<a href="#landing">Landing</a>
+				<a href="#register">Register</a>
+			</div>
+		</nav>
+
+
+
+
+
+		<!-- Inline Styling -->
+		<!-- Directly applying the style to the element -->
+		<h1 style="color: red;">Hello World</h1>
+
+		<main>
+			<h2>Welcome to Zuitt!</h2>
+			<p>Sample paragraph</p>
+
+			<h3 id="zuitt-motto">Opportunities for everyone, everywhere!</h3>
+
+			<img src="./image3.jpg">
+		</main>
+
+		<section id="landing">
+			<ol id="bootcamp-learning-list">
+				<li class="offering-item">Day Classes</li>
+				<li class="offering-item">Night Classes</li>
+				<li class="offering-item">Intro to coding events</li>
+			</ol>
+		
+
+		<a href="#top"> Back to Top</a>
+		</section>
+
+		<section id="register">
+			<h2>Register</h2>
+			<form>
+				<label for="first-name">First Name:</label>
+				<input type="text" name="first_name" id="first-name" required autocomplete="">
+				<br>
+				<label for=""last-name>Last Name:</label>
+				<input type="text" name="last_name" id="last-name" required autocomplete="">
+				<br>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" required autocomplete="">
+				<br>
+				<button type="submit">Apply Now</button>
+
+			</form>
+		<br>
+		<a href="#top">Back to Top</a>
+		</section>
+	</body>
+</html>

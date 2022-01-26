@@ -1,0 +1,168 @@
+/*Universal Selector*/
+/* "*" symbol is a universal selector and is used to target all elements*/
+* {
+	font-family: "Courier New", monospace;
+	/*font-family changes the style of the font
+	The value Courier new is used as the primary font and the value monospace is used as a secondary font when the browser is unable to use the promary font*/
+	font-size: 20px;
+}
+
+
+
+
+
+/*Type Selector*/
+h1	{
+	color: yellow !important;
+	text-align: center;
+	font-size: 2rem;
+
+	/*rem is based on the value of the root element*/
+}
+
+/*ID Selector*/
+#zuitt-motto {
+	letter-spacing: 5px;
+}
+
+
+/*Class Selector*/
+.offering-item {
+	text-transform: uppercase;
+}
+
+
+/*Attributes Selector*/
+/*tagname[attribute]*/
+/*the attribute selector only works on the exact attribute syntax provided to the HTML tag. IT is also case sensitive*/
+input[required] {
+	border-width: 2px;
+	border-style: solid;
+	border-color: navy;
+}
+
+h3 {
+	letter-spacing: 25px ;
+}
+
+
+
+
+/*CSS Selectors Combinators*/
+
+/*A combinator is something that explains the relationship between the selectors*/
+
+
+/*Adjacent Sibling Selector*/
+/*selector + selector*/
+/*h3 + img {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+}*/
+
+#zuitt-motto + img {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+}
+
+/*Descendant Selector*/
+/*Selector selector*/
+/*#bootcamp-learning-list li{
+	color: #E033FF;
+}*/
+
+ol .offering-item{
+	color: #6D067F;
+}
+
+
+/*General Sibling Selector*/
+/*Selector ~ selector*/
+
+h2 ~ a, a{
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+
+/*Child selector*/
+/*selector > selector*/
+
+body > section > form > label {
+	color: rgb(0, 0, 128);
+}
+
+/*Multiple selector*/
+/*selector, selector*/
+
+h2, p {
+text-transform: uppercase;
+}
+
+
+body {
+	background-color: skyblue;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	background-color: white;
+}
+
+a:hover {
+	background-color: #b4d6de;
+}
+
+div {
+	display: inline-block;
+	/*inline-block will allow the div element to be inline with the sibling elements and occupy the remaining space as if its were a block element*/
+	float: right;
+}
+
+/*landing, register section*/
+section	{
+	height: 100vh;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+ol {
+	list-style-type: none;
+}
+
+form{
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	height: 220px;
+	width: 25vw;
+	position: relative;
+	left: 37.25%;
+}
+
+button {
+	background-color: darksalmon;
+	color: white;
+	border: 0;
+	border-radius: 15px;
+	margin: 10px;
+	padding: 5px;
+
+}
+
+main {
+	text-align: center;
+
+}
